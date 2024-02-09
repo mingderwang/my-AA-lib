@@ -1,6 +1,6 @@
 {
-  "name": "my-AA-lib",
-  "version": "0.0.1",
+  "name": "@muzamint/cli-hello",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -9,6 +9,9 @@
     "dev": "bun --watch run src/index.ts",
     "build": "bun run build.mjs",
     "prepublishOnly": "bun run build"
+  },
+  "bin": {
+    "hello": "./src/index.ts"
   },
   "files": [
     "dist"
