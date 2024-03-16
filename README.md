@@ -38,3 +38,9 @@ curl -L https://foundry.paradigm.xyz | bash
 ```bash
 anvil --fork-url https://mainnet.chainnodes.org/42ed77c3-38d5-45d3-8ae4-56256670ae8b --fork-block-number 17480237 --fork-chain-id 1 --chain-id 1
 ```
+
+### local network example
+
+```bash
+anvil --fork-url https://mainnet.chainnodes.org/42ed77c3-38d5-45d3-8ae4-56256670ae8b --fork-block-number 17480237 --fork-chain-id 1 --chain-id 1
+```

@@ -6,7 +6,8 @@ console.log(block);
 
 export async function signTransaction() {
 
-  const privateKey = '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80';
+  const privateKey = process.env.PRIVATE_KEY;
+console.log(privateKey)
   const rpcUrl = 'http://127.0.0.1:8545';
   const signer = new ethers.Wallet(privateKey, new ethers.JsonRpcProvider(rpcUrl));
   const tx = await signer.sendTransaction({
